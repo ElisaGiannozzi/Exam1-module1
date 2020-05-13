@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+
+.section1 {
+  background-image: url("../img/background-section1.png"), linear-gradient(to top right, #55B7FF 0%, #7E5AFF 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  text-transform: uppercase;
+  list-style-type: circle;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 50px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  list-style-type: disc;
+}
+
+/*doesn't work as expected */
+.nav-list a:active {
+  list-style-type: disc;
+}
+
+/*doesn't work as expected */
+.social-media-container {
+  color: #FFFFFF;
+  padding: 17px;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+  margin-right: 20px;
+}
+
+.slider-container {
+  margin: 0 auto;
+  max-width: 1380px;
+  max-height: 600px;
+}
+
+.slide {
+  height: 700px;
+}
+
+.first {
+  background-color: green;
+}
+
+/*# sourceMappingURL=index.css.map */
