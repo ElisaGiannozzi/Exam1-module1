@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -57,16 +58,63 @@ body {
 
 .slider-container {
   margin: 0 auto;
-  max-width: 1380px;
-  max-height: 600px;
+  max-width: 1300px;
+  max-height: 700px;
 }
 
 .slide {
-  height: 700px;
+  height: 500px;
+  width: 600px;
 }
 
-.first {
-  background-color: green;
+.slide {
+  text-align: center;
+}
+
+.first-main-text, .main-text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.first-secondary-text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+}
+
+.slick-dots {
+  transform: rotate(90deg);
+  top: 100px;
+  left: 500px;
+}
+
+.slick-dots li {
+  margin: 0 15px;
+}
+
+.slick-dots li button:before,
+.slick-dots li button:focus {
+  color: white;
+  font-size: 20px;
+  content: "○";
+  opacity: 1;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
