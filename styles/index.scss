@@ -1,3 +1,5 @@
+$hover-on-white: #4d4747; 
+
 body {
   margin: 0;
 }
@@ -9,6 +11,9 @@ body {
   background-position: center center;
   background-attachment: fixed;
   min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
 }
 
 .nav-container {
@@ -55,6 +60,21 @@ body {
   margin-right: 20px;
 }
 
+.fa-facebook-f:hover {
+    color: $hover-on-white; 
+    cursor: pointer;  
+}
+
+.fa-twitter:hover {
+    color: $hover-on-white; 
+    cursor: pointer;  
+}
+
+.fa-instagram:hover {
+    color: $hover-on-white;
+    cursor: pointer;  
+}
+
 .slider-container {
     margin: 0 auto; 
     max-width: 1300px; 
@@ -66,9 +86,13 @@ body {
   width: 600px; 
 }
 
-.slide {
-    text-align: center; 
+.slide, {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .first-main-text, .main-text {
     font-family: 'Montserrat', sans-serif;
@@ -114,4 +138,31 @@ body {
 
 .slick-dots li.slick-active button:before{
     color: white; 
+}
+
+.button-down-container {
+    text-align: center; 
+}
+
+.button-down {
+    border-color: white; 
+    background-color: transparent; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    border-style: solid; 
+}
+
+.button-down:hover {
+    cursor: pointer;
+    border-color: $hover-on-white;  
+}
+
+.fa-chevron-down {
+    color: white; 
+}
+
+.fa-chevron-down:hover {
+    cursor: pointer; 
+    color: $hover-on-white; 
 }
