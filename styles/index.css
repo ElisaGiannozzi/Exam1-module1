@@ -165,4 +165,88 @@ body {
   color: #4d4747;
 }
 
+.rule {
+  width: 7%;
+}
+
+.section2 {
+  min-height: 100vh;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2C4058;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.section2-images-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pre-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  text-transform: uppercase;
+}
+
+.text-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2C4058;
+  text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.section2-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2C4058;
+  max-width: 500px;
+}
+
+.details-button {
+  min-width: 190px;
+  min-height: 50px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.address {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.blue-rectangle {
+  position: relative;
+}
+
+.facade {
+  position: absolute;
+  top: 1150px;
+  left: 250px;
+}
+
 /*# sourceMappingURL=index.css.map */
