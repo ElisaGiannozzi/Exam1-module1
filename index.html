@@ -21,10 +21,10 @@
             </div>
             <div class="links-container">
                 <ul class="nav-list">
-                    <a href=""><li>About us</li></a>
-                    <a href=""><li>Projects</li></a>
-                    <a href=""><li>News</li></a>
-                    <a href=""><li>Contact</li></a>
+                    <a href="#about-us"><li>About us</li></a>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#news"><li>News</li></a>
+                    <a href="#contact-us"><li>Contact</li></a>
                 </ul> 
             </div>
             <div class="social-media-container">
@@ -52,10 +52,10 @@
             </div>
         </div>
         <div class="button-down-container">
-            <button class="button-down" type="button"><i class="fas fa-chevron-down"></i></button>
+            <a href="#about-us" class="button-down"><i class="fas fa-chevron-down"></i></button></a>
         </div>
     </div>
-    <div class="section2">
+    <div class="section2" id="about-us">
         <hr class="rule">
         <h2 class="section-title">What we do</h2>
         <div class="content-wrapper">
@@ -81,7 +81,7 @@
             </div>
         </div>
     </div>
-    <div class="section3">
+    <div class="section3"  id="projects">
         <div class="content-wrapper2">
             <div class="section3-left-container">
                 <div class="text-container2">
@@ -105,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="section4">
+    <div class="section4" id="news">
         <hr class="rule2">
         <h2 class="section-title2">Latest News</h2>
         <div class="slider-container2">
@@ -183,9 +183,10 @@
         </div>
         <button class="details-button" type="button">See more</button>
     </div>
-    <div class="section6">
+    <div class="section6" id="contact-us">
         <div id="map"></div>
-        <div class="section7">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzjhP2niegbs2DXcT8Qi4T_i-cRwhmdA0&callback=initMap" type="text/javascript"></script>
+        <div class="section7" id="myform">
             <hr class="rule">
             <h2 class="section7-title">Get in touch</h2>
             <div class="form-container">
@@ -207,11 +208,11 @@
                         <p>From 07:05AM to 19:30PM</p>
                     </div>
                 </div>
-                <div class="form-right">
+                <form name="contact-form" class="form-right">
                     <input type="text" class="name-input" name="fname" placeholder="your name">
                     <input type="text" class="email-input" name="email" placeholder="your email">
                     <button type="button" class="submit-button">Submit</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -228,9 +229,9 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzjhP2niegbs2DXcT8Qi4T_i-cRwhmdA0&callback=initMap"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="script.js"></script>
 </body>

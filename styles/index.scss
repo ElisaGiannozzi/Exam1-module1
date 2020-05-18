@@ -1,5 +1,10 @@
 $hover-on-white: #4d4747;
-$text-color: #2C4058; 
+$text-color: #2C4058;
+$main-font-family: 'Montserrat', sans-serif; 
+
+html {
+  scroll-behavior: smooth; 
+}
 
 body {
   margin: 0;
@@ -80,6 +85,12 @@ body {
     margin: 0 auto; 
     max-width: 1300px; 
     max-height: 700px; 
+
+    .slick-dots {
+      transform: rotate(90deg); 
+      top: 100px; 
+      left: 500px; 
+  }
 }
 
 .slide {
@@ -93,7 +104,7 @@ body {
 
 
 .first-main-text, .main-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font-family;
     text-transform: uppercase; 
     font-weight: bold; 
     font-size: 80px; 
@@ -103,18 +114,12 @@ body {
 }
 
 .first-secondary-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font-family;
     text-transform: uppercase; 
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.3em;
     color: #FFFFFF;
-}
-
-.slick-dots {
-    transform: rotate(90deg); 
-    top: 100px; 
-    left: 500px; 
 }
 
 .slick-dots li {
@@ -142,21 +147,8 @@ body {
     text-align: center; 
 }
 
-.button-down {
-    border-color: white; 
-    background-color: transparent; 
-    border-radius: 50%; 
-    width: 40px; 
-    height: 40px; 
-    border-style: solid; 
-}
-
-.button-down:hover {
-    cursor: pointer;
-    border-color: $hover-on-white;  
-}
-
 .fa-chevron-down {
+    font-size: 22px; 
     color: white; 
 }
 
@@ -167,8 +159,8 @@ body {
 
 .rule {
   border: 0; 
-  border-top: 1px solid black; 
-  width: 5%; 
+  border-top: 1px solid #999393; 
+  width: 10%; 
 }
 
 .section2, .section3 {
@@ -179,7 +171,7 @@ body {
 .section-title {
   text-align: center; 
   text-transform: uppercase; 
-  font-family:  'Montserrat', sans-serif;
+  font-family:  $main-font-family;
   font-weight: bold; 
   font-size: 44px; 
   line-height: 54px; 
@@ -206,7 +198,7 @@ body {
 }
 
 .pre-title, .pre-title2 {
-  font-family:  'Montserrat', sans-serif;
+  font-family:  $main-font-family;
   font-size: 22px; 
   line-height: 27px; 
   color: $text-color;
@@ -215,7 +207,7 @@ body {
 }
 
 .text-title, .text-title2 {
-  font-family:  'Montserrat', sans-serif;
+  font-family:  $main-font-family;
   font-size: 44px; 
   line-height: 54px; 
   color: $text-color; 
@@ -225,7 +217,7 @@ body {
 }
 
 .section2-text, .section3-text {
-  font-family:  'Montserrat', sans-serif;
+  font-family:  $main-font-family;
   font-size: 18px; 
   line-height: 30px; 
   color: $text-color; 
@@ -237,7 +229,7 @@ body {
   min-height: 50px; 
   border: 1px solid  #000000; 
   background-color: transparent; 
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-size: 14px; 
   line-height: 17px; 
   color: #000000;
@@ -257,7 +249,7 @@ body {
 }
 
 .address {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-style: italic; 
   font-size: 15px; 
   line-height: 20px; 
@@ -300,13 +292,13 @@ body {
 .rule2 {
   border: 0; 
   border-top: 1px solid white;
-  width: 5%; 
+  width: 10%; 
 }
 
 .section-title2 {
   text-align: center; 
   text-transform: uppercase; 
-  font-family:  'Montserrat', sans-serif;
+  font-family:  $main-font-family;
   font-weight: bold; 
   font-size: 44px; 
   line-height: 54px; 
@@ -318,6 +310,35 @@ body {
   margin: 0 auto; 
   max-width: 1370px; 
   min-height: 500px; 
+
+  .arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 0;
+    height: 0;
+    border: none; 
+    color: white; 
+    background-color: transparent; 
+    font-size: 40px; 
+  }
+
+  .prev-arrow{
+      left: -40px;
+  }
+
+  .next-arrow{
+      right: -40px;
+  }
+
+  .arrow:hover {
+      cursor: pointer; 
+  }
+
+  .arrow:focus {
+    outline: none; 
+  }
+
 }
 
 .card { 
@@ -334,7 +355,7 @@ body {
 }
 
 .card-title {
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-weight: bold; 
   font-size: 22px; 
   line-height: 27px; 
@@ -348,6 +369,7 @@ body {
   font-size: 18px; 
   line-height: 25px; 
   color: $text-color; 
+  max-width: 290px; 
 }
 
 .author-container {
@@ -356,7 +378,7 @@ body {
 }
 
 .author {
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-size: 18px; 
   line-height: 22px; 
   text-transform: uppercase;
@@ -364,7 +386,7 @@ body {
 }
 
 .date {
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-size: 14px; 
   line-height: 17px; 
   color: #55B7FF;
@@ -387,7 +409,7 @@ body {
 .section5-title {
   text-align: center; 
   text-transform: uppercase; 
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-weight: bold; 
   font-size: 44px; 
   line-height: 54px; 
@@ -421,16 +443,14 @@ body {
 }
 
 .section6 {
-  min-height: 80vh; 
-  min-width: 100%; 
   display: flex; 
   flex-direction: column; 
   align-items: center; 
 }
 
 #map {
-  width: 100%; 
   height: 100%; 
+  width: 100%; 
   margin: 0;
   padding: 0;
   z-index: -1; 
@@ -450,11 +470,12 @@ body {
   background-size: auto;
   background-position: bottom;
   background-attachment: fixed;  
+  padding-top: 40px; 
 }
 
 .section7-title {
   text-transform: uppercase; 
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-weight: bold; 
   font-size: 44px; 
   line-height: 54px; 
@@ -470,7 +491,7 @@ body {
 .form-address, .phone, .email, .clock {
   display: flex; 
   align-items: center; 
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-size: 18px; 
   line-height: 28px;
 }
@@ -491,14 +512,14 @@ body {
 
 .name-input, .email-input {
   border: none; 
-  border-bottom: 1px solid #4B5562; 
-  font-family:  'Montserrat', sans-serif;
+  border-bottom: 1px solid #999393; 
+  font-family: $main-font-family;
   width: 310px; 
   height: 41px; 
 }
 
 .submit-button {
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-size: 18px; 
   line-height: 27px; 
   text-transform: uppercase; 
@@ -537,7 +558,7 @@ body {
 }
 
 .copyrights {
-  font-family:  'Montserrat', sans-serif;
+  font-family: $main-font-family;
   font-size: 14px; 
   line-height: 17px; 
   color: white; 

@@ -5,14 +5,17 @@ $(document).ready(function(){
   });
 });
 
-
 $(document).ready(function(){
     $('.slider-container2').slick({
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       arrows: true, 
-      dots: true
+      prevArrow: '<button class="arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button class="arrow next-arrow"><i class="fas fa-chevron-right"></i></button>',
+      dots: true,
+      autoplay: true, 
+      autoplaySpeed: 4000, 
     });
   });
 
@@ -193,3 +196,18 @@ var image = 'img/map-pin.png';
     draggable:true,
   });
 }
+
+$(function() {
+    $("form[name='contact-form']").validate({
+        rules: {
+            fname: "required", 
+            email: {
+                required: true, 
+                email: true
+            },
+            submitHandler: function(form) {
+                form.submit(); 
+            }
+        }
+    }); 
+}); 
