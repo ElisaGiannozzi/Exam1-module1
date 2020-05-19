@@ -278,7 +278,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-attachment: fixed;
-  min-height: 90vh;
+  min-height: 100vh;
   padding-top: 40px;
 }
 
@@ -326,6 +326,16 @@ body {
 }
 .slider-container2 .arrow:focus {
   outline: none;
+}
+.slider-container2 .slick-dots {
+  position: absolute;
+  bottom: -75px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .card {
@@ -391,6 +401,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 90vh;
+  margin-top: 40px;
 }
 
 .section5-title {
@@ -439,7 +450,7 @@ body {
 }
 
 #map {
-  height: 700px;
+  height: 900px;
   width: 100%;
   margin: 0;
   padding: 0;
